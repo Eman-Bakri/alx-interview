@@ -3,7 +3,11 @@
 
 
 def pascal_triangle(n):
-    """Returns the n Pascal’s triangle:
+    """Returns the n Pascal’s triangle
+    
+    arg:
+    n: int
+    return list of integers as  pascal triangle
     """
 
     if n <= 0:
