@@ -19,7 +19,7 @@ def pascal_triangle(n):
                     """ set first column elements to 1 """
                     result_pascal[element].append(1)
                 else:
-                    result_pascal[element].append(pascal[element-1][column] + pascal[element-1][column-1])
+                    result_pascal[element].append(result_pascal[element-1][column] + result_pascal[element-1][column-1])
             elif(column == element):
                 """ set diagonal elements to 1 """
                 result_pascal[element].append(1)
