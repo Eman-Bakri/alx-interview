@@ -3,14 +3,15 @@
 
 
 def pascal_triangle(n):
-    """Returns the n Pascal’s triangle
+    """
+    Returns the n Pascal’s triangle
     
-    arg:
+    args:
     n: int
     return list of integers as  pascal triangle
     """
 
-    if n <= 0:
+    if (n <= 0):
         return []
     
     """ empty array to hold the triangle data """
@@ -18,8 +19,8 @@ def pascal_triangle(n):
 
     for element in range(n):
         for column in range(element+1):
-            if(column < element):
-                if(column == 0):
+            if (column < element):
+                if (column == 0):
                     """ set first column elements to 1 """
                     result_pascal[element].append(1)
                 else:
@@ -28,4 +29,4 @@ def pascal_triangle(n):
                 """ set diagonal elements to 1 """
                 result_pascal[element].append(1)
 
-    return result_pascal
+    return (result_pascal)
