@@ -18,14 +18,14 @@ def pascal_triangle(n):
     result_pascal = [[] for i in range(n)]
 
     for element in range(n):
-        for column in range(element+1):
+        for column in range(element + 1):
             if (column < element):
                 if (column == 0):
                     """ set first column elements to 1 """
                     result_pascal[element].append(1)
                 else:
-                    result_pascal[element].append(result_pascal[element-1][column] + result_pascal[element-1][column-1])
-            elif(column == element):
+                    result_pascal[element].append(result_pascal[element - 1][column] + result_pascal[element - 1][column - 1])
+            elif (column == element):
                 """ set diagonal elements to 1 """
                 result_pascal[element].append(1)
 
