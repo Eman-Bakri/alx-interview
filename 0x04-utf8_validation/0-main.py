@@ -14,6 +14,7 @@ print(validUTF8(data))
 data = [229, 65, 127, 256]
 print(validUTF8(data))
 
+// Extra test statements
 data = [197, 130, 1]
 print(validUTF8(data))
 
